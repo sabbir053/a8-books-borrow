@@ -3,7 +3,7 @@ import { FaQuoteLeft, FaStar } from 'react-icons/fa';
 
 const Testimonials = () => {
     return (
-        <section className="py-16 bg-base-200/50 rounded-3xl my-12">
+        <section className="py-10 bg-base-200/50 rounded-md">
             <div className="container mx-auto px-4">
                 {/* Section Header */}
                 <div className="text-center mb-12">
@@ -87,7 +87,6 @@ const Testimonials = () => {
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>

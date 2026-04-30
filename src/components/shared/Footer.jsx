@@ -3,7 +3,7 @@ import { FaFacebook, FaGithub, FaInstagram, FaMailBulk, FaMapPin, FaPhone, FaTwi
 
 const Footer = () => {
     return (
-        <footer className="bg-base-200 text-base-content mt-20">
+        <footer className="bg-gray-300 text-base-content">
             <div className="footer p-10 container mx-auto grid-cols-1 md:grid-cols-3">
 
                 <aside>
@@ -60,7 +60,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="border-t border-base-300 bg-base-300">
+            <div className="border-t border-base-300 bg-gray-300">
                 <div className="container mx-auto px-10 py-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
                     <p>© {new Date().getFullYear()} BookVibe. All rights reserved.</p>
                     <div className="flex gap-6">

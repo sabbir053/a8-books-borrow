@@ -10,7 +10,7 @@ const booksData = [
         "description": "Eloquent JavaScript takes you from the very basics of programming to advanced topics like asynchronous programming and browser APIs. This edition includes a deep dive into modern ES6+ features, functional programming patterns, and how to build full-scale applications using Node.js. It's an essential guide for any web developer looking to master the language of the web.",
         "category": "Tech",
         "available_quantity": 5,
-        "image_url": "https://m.media-amazon.com/images/I/51InjRPaF7L._SL1000_.jpg"
+        "image_url": "https://i.ibb.co.com/BVBwhysq/IEVC-s-Vu4.png"
     },
     {
         "id": 2,
@@ -19,7 +19,7 @@ const booksData = [
         "description": "Alicia Berenson is a famous painter who shoots her husband five times in the face and then never speaks another word. Her refusal to talk turns a domestic tragedy into something far more mysterious, a mystery that captures the public imagination and casts Alicia into notoriety. Theo Faber is a criminal psychotherapist who has waited a long time for the opportunity to work with her and uncover the shocking truth.",
         "category": "Story",
         "available_quantity": 8,
-        "image_url": "https://m.media-amazon.com/images/I/81LFApPZ4mL._SL1500_.jpg"
+        "image_url": "https://i.ibb.co.com/5g8xdBnv/6513040-80.webp"
     },
     {
         "id": 3,
@@ -28,7 +28,7 @@ const booksData = [
         "description": "In this final book from the greatest scientist of our era, Stephen Hawking leaves us with his ultimate thoughts on the universe's biggest questions. From 'Is there a God?' to 'Is time travel possible?', Hawking addresses the challenges we face as a species and where we, as a planet, are heading next. A brilliant, last message to the world that explores the boundaries of human knowledge and science.",
         "category": "Science",
         "available_quantity": 12,
-        "image_url": "https://m.media-amazon.com/images/I/919NOCXoGzL.jpg"
+        "image_url": "https://i.ibb.co.com/0RVWHxGT/470.webp"
     },
     {
         "id": 4,
@@ -37,7 +37,7 @@ const booksData = [
         "description": "Even bad code can function, but if code isn't clean, it can bring a development organization to its knees. Robert C. Martin presents a revolutionary paradigm for writing high-quality code. This book is divided into three parts: principles, patterns, and practices for writing clean code, followed by several case studies of increasing complexity. It is a must-read for any developer who wants to produce professional, maintainable software.",
         "category": "Tech",
         "available_quantity": 3,
-        "image_url": "https://m.media-amazon.com/images/I/41xShlnTZTL._SL1000_.jpg"
+        "image_url": "https://i.ibb.co.com/5Xm6zJvL/37aaf821bfaf5e5fdd096a684b3a0bd9.png"
     },
     {
         "id": 5,
@@ -46,7 +46,7 @@ const booksData = [
         "description": "This modern classic tells the story of Santiago, an Andalusian shepherd boy who yearns to travel in search of a worldly treasure. His quest will lead him to riches far different—and far more satisfying—than he ever imagined. Santiago's journey teaches us about the essential wisdom of listening to our hearts, of recognizing opportunity and learning to read the omens strewn along life's path, and, most importantly, following our dreams.",
         "category": "Story",
         "available_quantity": 15,
-        "image_url": "https://m.media-amazon.com/images/I/51Z9p52Ix8L.jpg"
+        "image_url": "https://i.ibb.co.com/YFXtB3BF/1587673469517.png"
     },
     {
         "id": 6,
@@ -55,7 +55,7 @@ const booksData = [
         "description": "Professor Dawkins explains that the gene is the fundamental unit of evolution. This imaginative, powerful, and stylistically brilliant work not only brought the insights of Neo-Darwinism to a wide audience but galvanized the biology community, generating much debate and stimulating whole new areas of research. It remains a classic work of evolutionary theory that explains how complex life emerged from simple building blocks.",
         "category": "Science",
         "available_quantity": 7,
-        "image_url": "https://m.media-amazon.com/images/I/71N7C6N-t6L.jpg"
+        "image_url": "https://i.ibb.co.com/jj0Pqg6/9780198788607.webp"
     },
     {
         "id": 7,
@@ -64,7 +64,7 @@ const booksData = [
         "description": "Regardless of how much experience you have with JavaScript, odds are you don't fully understand the language. This book series gets into the hidden corners of JavaScript that most developers never take the time to learn. You'll explore closures, prototypes, and the 'this' keyword in extreme detail. If you want to move beyond just 'getting it to work' and start writing truly efficient code, this is your roadmap.",
         "category": "Tech",
         "available_quantity": 10,
-        "image_url": "https://m.media-amazon.com/images/I/41T5H8u7fUL.jpg"
+        "image_url": "https://i.ibb.co.com/vvD6xC0X/25136217.jpg"
     },
     {
         "id": 8,
@@ -73,7 +73,7 @@ const booksData = [
         "description": "For years, rumors of the 'Marsh Girl' have haunted Barkley Cove, a quiet town on the North Carolina coast. So in late 1969, when handsome Chase Andrews is found dead, the locals immediately suspect Kya Clark, the so-called Marsh Girl. But Kya is not what they say. Sensitive and intelligent, she has survived for years alone in the marsh that she calls home. A heartbreaking coming-of-age story and a surprising murder mystery.",
         "category": "Story",
         "available_quantity": 6,
-        "image_url": "https://m.media-amazon.com/images/I/81O1oy0y9eL.jpg"
+        "image_url": "https://i.ibb.co.com/HL0zWKbX/81-Gcr1-Vn75-L-CR2-0-1276-720-SR684-386.jpg"
     },
     {
         "id": 9,
@@ -82,7 +82,7 @@ const booksData = [
         "description": "Cosmos is one of the bestselling science books of all time. With a new introduction by Sagan's collaborator, Ann Druyan, this classic work explores the 15 billion years of cosmic evolution that have transformed matter into consciousness. Sagan traces the origins of knowledge and the scientific method and explores our place in the universe, looking toward a future where we might finally reach the stars.",
         "category": "Science",
         "available_quantity": 9,
-        "image_url": "https://m.media-amazon.com/images/I/817-A6itf7L.jpg"
+        "image_url": "https://i.ibb.co.com/pDX8PHG/1200x630wz.png"
     },
     {
         "id": 10,
@@ -91,7 +91,7 @@ const booksData = [
         "description": "The Pragmatic Programmer is one of those rare tech books you’ll read, re-read, and read again over the years. Whether you’re a new developer or an experienced practitioner, you’ll come away with fresh insights each time. It covers topics ranging from personal responsibility and career development to architectural techniques for keeping your code flexible and easy to adapt and reuse.",
         "category": "Tech",
         "available_quantity": 4,
-        "image_url": "https://m.media-amazon.com/images/I/41as+49FOKL._SX395_BO1,204,203,200_.jpg"
+        "image_url": "https://i.ibb.co.com/rRWpn2vk/61d5bdd5bd7b580020c11f3f.jpg"
     },
     {
         "id": 11,
@@ -100,7 +100,7 @@ const booksData = [
         "description": "Written in 1948, 1984 was George Orwell’s chilling prophecy about the future. And while 1984 has come and gone, his dystopian vision of a government that will do anything to control the narrative is timelier than ever. Nominated as one of America’s best-loved novels by PBS’s The Great American Read, 1984 remains the modern standard for negative utopia and a warning against totalitarianism.",
         "category": "Story",
         "available_quantity": 20,
-        "image_url": "https://m.media-amazon.com/images/I/71kxa1-0caL.jpg"
+        "image_url": "https://i.ibb.co.com/4Rr2RpDP/s-l400.png"
     },
     {
         "id": 12,
@@ -109,13 +109,13 @@ const booksData = [
         "description": "Destined to become a modern classic, Sapiens is a thrilling account of humankind’s extraordinary history—from the Stone Age to the Silicon Age—and our journey from insignificant apes to rulers of the world. Harari examines how the currents of history have shaped our human societies, the animals and plants around us, and even our personalities. Bold, wide-ranging and provocative, Sapiens challenges everything we thought we knew.",
         "category": "Science",
         "available_quantity": 11,
-        "image_url": "https://m.media-amazon.com/images/I/713jIoMO3UL.jpg"
+        "image_url": "https://i.ibb.co.com/YFsVNBLb/sapiens.png"
     }
 ]
 
 const FeaturedBooks = () => {
     return (
-        <section className="py-16 container mx-auto">
+        <section className="py-10 container mx-auto">
             {/* Header Section */}
             <div className="flex flex-col md:flex-row items-center justify-between mb-12 px-4 gap-4">
                 <div className="flex items-center gap-4">
@@ -133,11 +133,11 @@ const FeaturedBooks = () => {
             </div>
 
             {/* Grid for all 12 Books */}
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-10 px-4">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-10  px-4">
                 {booksData.map((book) => (
                     <div
                         key={book.id}
-                        className="group flex flex-col h-full bg-base-100 border border-base-200 rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-500"
+                        className="group bg-gray-100 flex flex-col h-full border border-base-200 rounded-md overflow-hidden shadow-md transition-all duration-500"
                     >
                         {/* Image & Category */}
                         <div className="relative h-64 overflow-hidden">
@@ -156,7 +156,7 @@ const FeaturedBooks = () => {
                         </div>
 
                         {/* Content Area */}
-                        <div className="flex flex-col flex-grow p-6">
+                        <div className="flex flex-col p-6">
                             <h3 className="font-bold text-lg leading-tight mb-2 line-clamp-1 group-hover:text-primary transition-colors">
                                 {book.title}
                             </h3>
