@@ -5,7 +5,6 @@ const Testimonials = () => {
     return (
         <section className="py-10 bg-base-200/50 rounded-md">
             <div className="container mx-auto px-4">
-                {/* Section Header */}
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold mb-4">What Our Readers Say</h2>
                     <p className="text-base-content/60 max-w-lg mx-auto">
@@ -13,10 +12,8 @@ const Testimonials = () => {
                     </p>
                 </div>
 
-                {/* Testimonial Grid (Desktop 3, Tab 2, Mobile 1) */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                    {/* Testimonial 1 */}
                     <div className="card bg-base-100 shadow-sm border border-base-200 p-8 relative overflow-visible">
                         <div className="absolute -top-4 -left-4 bg-primary text-primary-content p-3 rounded-xl shadow-lg">
                             <FaQuoteLeft size={20} />
@@ -40,7 +37,6 @@ const Testimonials = () => {
                         </div>
                     </div>
 
-                    {/* Testimonial 2 */}
                     <div className="card bg-base-100 shadow-sm border border-base-200 p-8 relative overflow-visible">
                         <div className="absolute -top-4 -left-4 bg-primary text-primary-content p-3 rounded-xl shadow-lg">
                             <FaQuoteLeft size={20} />
@@ -64,7 +60,6 @@ const Testimonials = () => {
                         </div>
                     </div>
 
-                    {/* Testimonial 3 */}
                     <div className="card bg-base-100 shadow-sm border border-base-200 p-8 relative overflow-visible">
                         <div className="absolute -top-4 -left-4 bg-primary text-primary-content p-3 rounded-xl shadow-lg">
                             <FaQuoteLeft size={20} />

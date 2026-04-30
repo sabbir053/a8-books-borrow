@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import { FiBookOpen, FiEye } from 'react-icons/fi';
+import { FiBookOpen } from 'react-icons/fi';
 
 const booksData = [
     {
@@ -116,7 +116,6 @@ const booksData = [
 const FeaturedBooks = () => {
     return (
         <section className="py-10 container mx-auto">
-            {/* Header Section */}
             <div className="flex flex-col md:flex-row items-center justify-between mb-12 px-4 gap-4">
                 <div className="flex items-center gap-4">
                     <div className="p-3 bg-primary/10 rounded-2xl text-primary">
@@ -132,41 +131,31 @@ const FeaturedBooks = () => {
                 </div>
             </div>
 
-            {/* Grid for all 12 Books */}
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-10  px-4">
                 {booksData.map((book) => (
                     <div
                         key={book.id}
                         className="group bg-gray-100 flex flex-col h-full border border-base-200 rounded-md overflow-hidden shadow-md transition-all duration-500"
                     >
-                        {/* Image & Category */}
                         <div className="relative h-64 overflow-hidden">
-                            <div className="absolute top-4 left-4 z-10">
-                                <span className="badge badge-primary py-3 px-4 font-bold shadow-lg">
-                                    {book.category}
-                                </span>
-                            </div>
                             <img
                                 src={book.image_url}
                                 alt={book.title}
                                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                             />
-                            {/* Overlay on Hover */}
                             <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         </div>
 
-                        {/* Content Area */}
                         <div className="flex flex-col p-6">
                             <h3 className="font-bold text-lg leading-tight mb-2 line-clamp-1 group-hover:text-primary transition-colors">
                                 {book.title}
                             </h3>
                             <p className="text-sm text-base-content/50 mb-6 font-medium">by {book.author}</p>
 
-                            {/* Button stays at bottom */}
                             <div className="mt-auto">
                                 <Link href={`/books/${book.id}`}>
-                                    <button className="btn btn-primary btn-block rounded-xl gap-2 font-extrabold shadow-lg shadow-primary/20">
-                                        <FiEye size={20} /> Details
+                                    <button className="btn btn-primary btn-block rounded-xl gap-2 font-bold shadow-md">
+                                        Details
                                     </button>
                                 </Link>
                             </div>

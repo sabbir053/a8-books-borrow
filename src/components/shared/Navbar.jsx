@@ -1,12 +1,13 @@
 import React from 'react';
+import Navlink from './Navlink';
 
 const Navbar = () => {
 
     const menuItems = (
         <>
-            <li><a>Home</a></li>
-            <li><a>All Books</a></li>
-            <li><a>My Profile</a></li>
+            <li><Navlink href="/">Home</Navlink></li>
+            <li><Navlink href="/books">All Books</Navlink></li>
+            <li><Navlink href="/profile">My Profile</Navlink></li>
         </>
     );
     return (
@@ -22,7 +23,7 @@ const Navbar = () => {
                         {menuItems}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl"> <span className='text-orange-500'>Book</span>Borrow</a>
+                <a className="btn btn-ghost text-xl"> <span className='text-blue-500'>Books</span>Borrow</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

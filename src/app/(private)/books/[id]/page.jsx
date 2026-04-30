@@ -116,11 +116,9 @@ const BookDetailsPage = async({ params }) => {
 
     const { id } = await params;
 
-    // 2. ID onujayi specific boi ti khunje ber kora
     const book = booksData.find((item) => item.id === parseInt(id));
     console.log(book, 'book');
 
-    // Error handling: Jodi boi na pawa jay
     if (!book) {
         return (
             <div className="flex justify-center items-center h-screen">
@@ -132,27 +130,21 @@ const BookDetailsPage = async({ params }) => {
 
     return (
         <div className="container mx-auto py-10 px-4">
-            <div className="flex flex-col lg:flex-row bg-base-100 rounded-[2.5rem] shadow-2xl border border-base-200 overflow-hidden">
+            <div className="flex flex-col lg:flex-row bg-base-100 rounded-md shadow-md overflow-hidden">
 
-                {/* Left side: Large Book Cover */}
-                <div className="lg:w-5/12 bg-base-200 p-8 md:p-16 flex justify-center items-center">
+                <div className="lg:w-5/12 p-8 md:p-16 flex justify-center items-center">
                     <div className="relative group">
                         <img
                             src={book.image_url}
                             alt={book.title}
-                            className="w-full rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.3)] transform transition-transform duration-500 group-hover:scale-105"
+                            className="w-full rounded-md shadow-lg transform transition-transform duration-500 group-hover:scale-105"
                         />
-                        <div className="absolute -bottom-4 -right-4 bg-primary text-white p-4 rounded-2xl shadow-xl font-bold">
-                            #{book.id}
-                        </div>
                     </div>
                 </div>
 
-                {/* Right side: Book Details */}
                 <div className="lg:w-7/12 p-8 lg:p-16 flex flex-col justify-center">
-                    {/* Category & Status */}
                     <div className="flex items-center gap-4 mb-6">
-                        <span className="badge badge-primary py-4 px-6 font-bold uppercase tracking-widest text-xs">
+                        <span className="badge badge-primary py-4 px-6 font-bold uppercase ">
                             {book.category}
                         </span>
                         <div className="flex items-center gap-2 text-success font-bold bg-success/10 px-4 py-1 rounded-full">
@@ -161,35 +153,32 @@ const BookDetailsPage = async({ params }) => {
                         </div>
                     </div>
 
-                    <h1 className="text-4xl md:text-6xl font-black text-base-content mb-4 tracking-tight leading-none">
+                    <h1 className="text-3xl md:text-3xl font-black text-base-content mb-4">
                         {book.title}
                     </h1>
 
-                    <div className="flex items-center gap-3 mb-10 text-xl md:text-2xl text-base-content/60 italic font-medium">
+                    <div className="flex items-center gap-3 mb-10 text-gray-500 md:text-lg italic">
                         <FiUser className="text-primary" />
                         <span>By {book.author}</span>
                     </div>
 
-                    {/* Rich Description Section */}
                     <div className="space-y-4 mb-10 border-l-4 border-primary/20 pl-6 py-2">
                         <h4 className="flex items-center gap-2 font-black text-primary uppercase text-sm tracking-widest">
                             <FiBook /> About the book
                         </h4>
-                        <p className="text-base-content/70 text-lg leading-relaxed max-w-2xl">
+                        <p className="text-gray-600 text-lg leading-relaxed max-w-2xl">
                             {book.description}
                         </p>
                     </div>
 
-                    {/* Actions */}
                     <div className="flex flex-col sm:flex-row gap-5 mt-4">
                         <button
-                            // onClick={handleBorrow}
-                            className="btn btn-primary btn-lg rounded-2xl px-12 font-black text-lg shadow-xl shadow-primary/30 hover:shadow-primary/50 transition-all border-none"
+                            className="btn btn-primary text-lg text-white"
                         >
                             Borrow This Book
                         </button>
 
-                        <div className="flex items-center gap-2 text-primary/60 font-semibold px-4">
+                        <div className="flex items-center gap-2 text-primary font-semibold px-4">
                             <FiCheckCircle />
                             <span>Free to read</span>
                         </div>
