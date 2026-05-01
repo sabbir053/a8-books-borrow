@@ -132,7 +132,7 @@ const FeaturedBooks = () => {
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-10  px-4">
-                {booksData.map((book) => (
+                {booksData.slice(0, 4).map((book) => (
                     <div
                         key={book.id}
                         className="group bg-gray-100 flex flex-col h-full border border-base-200 rounded-md overflow-hidden shadow-md transition-all duration-500"
@@ -153,7 +153,7 @@ const FeaturedBooks = () => {
                             <p className="text-sm text-base-content/50 mb-6 font-medium">by {book.author}</p>
 
                             <div className="mt-auto">
-                                <Link href={`/books/${book.id}`}>
+                                <Link href={`/books/${book.id}`} className="block">
                                     <button className="btn btn-primary btn-block rounded-xl gap-2 font-bold shadow-md">
                                         Details
                                     </button>
@@ -162,6 +162,11 @@ const FeaturedBooks = () => {
                         </div>
                     </div>
                 ))}
+                <Link href={`/all-books`} className="flex items-center justify-center col-span-2 md:col-span-3 lg:col-span-4 mt-4">
+                    <button className="btn btn-outline btn-primary rounded-xl gap-2 font-bold shadow-md">
+                        View All Books
+                    </button>
+                </Link>
             </div>
         </section>
     );
