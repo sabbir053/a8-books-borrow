@@ -1,5 +1,6 @@
 import React from 'react';
 import Navlink from './Navlink';
+import Link from 'next/link';
 
 const Navbar = () => {
 
@@ -30,8 +31,13 @@ const Navbar = () => {
                     {menuItems}
                 </ul>
             </div>
-            <div className="navbar-end">
-                <a className="btn">Login</a>
+            <div className="navbar-end items-center gap-2">
+                <Link href="/login">
+                    <li className="btn">Login</li>
+                </Link>
+                <Link href="/register">
+                    <li className="btn">Register</li>
+                </Link>
             </div>
         </div>
     );
