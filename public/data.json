@@ -1,86 +1,110 @@
 [
-    {
-        "id": 1,
-        "title": "Eloquent JavaScript",
-        "author": "Marijn Haverbeke",
-        "category": "Tech",
-        "image_url": "https://i.ibb.co.com/BVBwhysq/IEVC-s-Vu4.png"
-    },
-    {
-        "id": 2,
-        "title": "The Silent Patient",
-        "author": "Alex Michaelides",
-        "category": "Story",
-        "image_url": "https://i.ibb.co.com/5g8xdBnv/6513040-80.webp"
-    },
-    {
-        "id": 3,
-        "title": "Brief Answers to the Big Questions",
-        "author": "Stephen Hawking",
-        "category": "Science",
-        "image_url": "https://i.ibb.co.com/0RVWHxGT/470.webp"
-    },
-    {
-        "id": 4,
-        "title": "Clean Code",
-        "author": "Robert C. Martin",
-        "category": "Tech",
-        "image_url": "https://i.ibb.co.com/5Xm6zJvL/37aaf821bfaf5e5fdd096a684b3a0bd9.png"
-    },
-    {
-        "id": 5,
-        "title": "The Alchemist",
-        "author": "Paulo Coelho",
-        "category": "Story",
-        "image_url": "https://i.ibb.co.com/YFXtB3BF/1587673469517.png"
-    },
-    {
-        "id": 6,
-        "title": "The Selfish Gene",
-        "author": "Richard Dawkins",
-        "category": "Science",
-        "image_url": "https://i.ibb.co.com/jj0Pqg6/9780198788607.webp"
-    },
-    {
-        "id": 7,
-        "title": "You Don't Know JS Yet",
-        "author": "Kyle Simpson",
-        "category": "Tech",
-        "image_url": "https://i.ibb.co.com/vvD6xC0X/25136217.jpg"
-    },
-    {
-        "id": 8,
-        "title": "Where the Crawdads Sing",
-        "author": "Delia Owens",
-        "category": "Story",
-        "image_url": "https://i.ibb.co.com/2sZz8n9v/where-the-crawdads-sing.jpg"
-    },
-    {
-        "id": 9,
-        "title": "Cosmos",
-        "author": "Carl Sagan",
-        "category": "Science",
-        "image_url": "https://i.ibb.co.com/pDX8PHG/1200x630wz.png"
-    },
-    {
-        "id": 10,
-        "title": "The Pragmatic Programmer",
-        "author": "Andrew Hunt & David Thomas",
-        "category": "Tech",
-        "image_url": "https://i.ibb.co.com/rRWpn2vk/61d5bdd5bd7b580020c11f3f.jpg"
-    },
-    {
-        "id": 11,
-        "title": "1984",
-        "author": "George Orwell",
-        "category": "Story",
-        "image_url": "https://i.ibb.co.com/4Rr2RpDP/s-l400.png"
-    },
-    {
-        "id": 12,
-        "title": "Sapiens: A Brief History of Humankind",
-        "author": "Yuval Noah Harari",
-        "category": "Science",
-        "image_url": "https://i.ibb.co.com/YFsVNBLb/sapiens.png"
-    }
-];
+  {
+    "id": 1,
+    "title": "Eloquent JavaScript",
+    "author": "Marijn Haverbeke",
+    "description": "Eloquent JavaScript is a comprehensive guide to learning modern JavaScript programming. It covers fundamental concepts such as variables, functions, and control structures, and gradually moves into more advanced topics like asynchronous programming, object-oriented design, and browser-based applications. The book also includes practical examples and exercises to help readers build real-world projects and strengthen their problem-solving skills.",
+    "category": "Tech",
+    "available_quantity": 10,
+    "image_url": "https://i.ibb.co.com/BVBwhysq/IEVC-s-Vu4.png"
+  },
+  {
+    "id": 2,
+    "title": "The Silent Patient",
+    "author": "Alex Michaelides",
+    "description": "The Silent Patient is a psychological thriller that tells the story of Alicia Berenson, a woman who shoots her husband and then mysteriously stops speaking. A psychotherapist becomes obsessed with uncovering the truth behind her silence. As the story unfolds, shocking twists and deep psychological insights reveal the complexity of human emotions, trauma, and hidden secrets.",
+    "category": "Story",
+    "available_quantity": 6,
+    "image_url": "https://i.ibb.co.com/5g8xdBnv/6513040-80.webp"
+  },
+  {
+    "id": 3,
+    "title": "Brief Answers to the Big Questions",
+    "author": "Stephen Hawking",
+    "description": "In this final book, Stephen Hawking explores some of the most profound questions about the universe, including the existence of God, the possibility of time travel, and the future of humanity. Written in a clear and accessible style, the book combines scientific knowledge with philosophical insights, making complex topics understandable for general readers.",
+    "category": "Science",
+    "available_quantity": 5,
+    "image_url": "https://i.ibb.co.com/0RVWHxGT/470.webp"
+  },
+  {
+    "id": 4,
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "description": "Clean Code is an essential guide for software developers who want to write maintainable, readable, and efficient code. The book discusses best practices, coding standards, and real-life examples of bad and good code. It teaches developers how to improve their coding habits and create software that is easy to understand and modify over time.",
+    "category": "Tech",
+    "available_quantity": 8,
+    "image_url": "https://i.ibb.co.com/5Xm6zJvL/37aaf821bfaf5e5fdd096a684b3a0bd9.png"
+  },
+  {
+    "id": 5,
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "description": "The Alchemist follows the journey of Santiago, a young shepherd who dreams of discovering a hidden treasure. Along the way, he meets various characters who guide him toward understanding his purpose in life. The story is rich with philosophical themes about destiny, dreams, and the importance of listening to one's heart.",
+    "category": "Story",
+    "available_quantity": 12,
+    "image_url": "https://i.ibb.co.com/YFXtB3BF/1587673469517.png"
+  },
+  {
+    "id": 6,
+    "title": "The Selfish Gene",
+    "author": "Richard Dawkins",
+    "description": "The Selfish Gene presents a gene-centered view of evolution, explaining how natural selection works at the level of genes rather than individuals. Dawkins introduces key concepts such as survival machines and memes, providing readers with a deeper understanding of biology and evolution in an engaging and thought-provoking manner.",
+    "category": "Science",
+    "available_quantity": 4,
+    "image_url": "https://i.ibb.co.com/jj0Pqg6/9780198788607.webp"
+  },
+  {
+    "id": 7,
+    "title": "You Don't Know JS Yet",
+    "author": "Kyle Simpson",
+    "description": "This book series dives deep into the core mechanisms of JavaScript, helping developers truly understand how the language works under the hood. It covers topics like scope, closures, prototypes, and asynchronous behavior, making it an essential resource for developers who want to master JavaScript at an advanced level.",
+    "category": "Tech",
+    "available_quantity": 7,
+    "image_url": "https://i.ibb.co.com/vvD6xC0X/25136217.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Where the Crawdads Sing",
+    "author": "Delia Owens",
+    "description": "Set in the marshlands of North Carolina, this novel tells the story of Kya Clark, a girl who grows up isolated from society. Blending elements of mystery, romance, and coming-of-age, the book explores themes of loneliness, resilience, and the connection between humans and nature.",
+    "category": "Story",
+    "available_quantity": 9,
+    "image_url": "https://i.ibb.co.com/2sZz8n9v/where-the-crawdads-sing.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Cosmos",
+    "author": "Carl Sagan",
+    "description": "Cosmos takes readers on a journey through space and time, exploring the origins of the universe, the evolution of life, and humanity's place in the cosmos. Carl Sagan combines scientific knowledge with poetic storytelling, making complex ideas accessible and inspiring curiosity about the universe.",
+    "category": "Science",
+    "available_quantity": 3,
+    "image_url": "https://i.ibb.co.com/pDX8PHG/1200x630wz.png"
+  },
+  {
+    "id": 10,
+    "title": "The Pragmatic Programmer",
+    "author": "Andrew Hunt & David Thomas",
+    "description": "The Pragmatic Programmer offers practical advice and techniques for becoming a better software developer. It covers a wide range of topics including code organization, debugging, and career development. The book encourages developers to think critically and continuously improve their skills.",
+    "category": "Tech",
+    "available_quantity": 6,
+    "image_url": "https://i.ibb.co.com/rRWpn2vk/61d5bdd5bd7b580020c11f3f.jpg"
+  },
+  {
+    "id": 11,
+    "title": "1984",
+    "author": "George Orwell",
+    "description": "1984 is a dystopian novel set in a totalitarian society where the government exercises complete control over people's lives. Through the story of Winston Smith, the book explores themes of surveillance, censorship, and the loss of individuality.",
+    "category": "Story",
+    "available_quantity": 5,
+    "image_url": "https://i.ibb.co.com/4Rr2RpDP/s-l400.png"
+  },
+  {
+    "id": 12,
+    "title": "Sapiens: A Brief History of Humankind",
+    "author": "Yuval Noah Harari",
+    "description": "Sapiens traces the history of humankind from the emergence of Homo sapiens in Africa to the present day. The book explores how biology, culture, and technology have shaped human societies, offering deep insights into our past and possible future.",
+    "category": "Science",
+    "available_quantity": 4,
+    "image_url": "https://i.ibb.co.com/YFsVNBLb/sapiens.png"
+  }
+]

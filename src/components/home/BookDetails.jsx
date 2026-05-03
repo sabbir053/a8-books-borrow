@@ -1,12 +1,32 @@
 'use client';
-import React from 'react';
-import { FiBook, FiCheckCircle, FiLayers, FiTag, FiUser } from 'react-icons/fi';
+import React, { useEffect } from 'react';
+import { FiBook, FiLayers, FiUser } from 'react-icons/fi';
 import { toast } from 'react-toastify';
+import { useSession } from '@/lib/auth-client';
+import { useRouter } from 'next/navigation';
 
 const BookDetails = ({ book }) => {
+    const { data, isPending } = useSession();
+    const router = useRouter();
+
+    const user = data?.user;
+
+    useEffect(() => {
+        if (!isPending && !user) {
+            router.push('/login');
+        }
+    }, [user, isPending, router]);
+
+    if (isPending) {
+        return <p className="text-center py-20">Loading...</p>;
+    }
+
+    if (!user) return null;
+
     const handleBorrow = () => {
-        toast.success(`Book "${book.title}" borrowed successfully! Check your profile.`);
+        toast.success(`Book "${book.title}" borrowed successfully!`);
     };
+
     return (
         <div className="lg:w-7/12 p-8 lg:p-16 flex flex-col justify-center">
             <div className="flex items-center gap-4 mb-6">
@@ -19,11 +39,11 @@ const BookDetails = ({ book }) => {
                 </div>
             </div>
 
-            <h1 className="text-3xl md:text-3xl font-black text-base-content mb-4">
+            <h1 className="text-3xl font-black mb-4">
                 {book.title}
             </h1>
 
-            <div className="flex items-center gap-3 mb-10 text-gray-500 md:text-lg italic">
+            <div className="flex items-center gap-3 mb-10 text-gray-500 italic">
                 <FiUser className="text-primary" />
                 <span>By {book.author}</span>
             </div>
@@ -37,19 +57,12 @@ const BookDetails = ({ book }) => {
                 </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-5 mt-4">
-                <button
-                    onClick={() => handleBorrow()}
-                    className="btn btn-primary text-lg text-white rounded-xl shadow-lg hover:scale-105 transition-transform"
-                >
-                    Borrow This Book
-                </button>
-
-                <div className="flex items-center gap-2 text-primary font-semibold px-4">
-                    <FiCheckCircle />
-                    <span>Free to read</span>
-                </div>
-            </div>
+            <button
+                onClick={handleBorrow}
+                className="btn btn-primary text-lg text-white rounded-xl"
+            >
+                Borrow This Book
+            </button>
         </div>
     );
 };
