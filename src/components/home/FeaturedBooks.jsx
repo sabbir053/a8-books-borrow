@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { FiBookOpen } from 'react-icons/fi';
@@ -138,9 +139,11 @@ const FeaturedBooks = () => {
                         className="group bg-gray-100 flex flex-col h-full border border-base-200 rounded-md overflow-hidden shadow-md transition-all duration-500"
                     >
                         <div className="relative h-64 overflow-hidden">
-                            <img
+                            <Image
                                 src={book.image_url}
                                 alt={book.title}
+                                height={256}
+                                width={256}
                                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                             />
                             <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>

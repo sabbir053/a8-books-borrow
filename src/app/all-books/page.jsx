@@ -3,94 +3,6 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { FiArrowRight, FiBook, FiGrid, FiSearch } from 'react-icons/fi';
 
-const booksData = [
-    {
-        "id": 1,
-        "title": "Eloquent JavaScript",
-        "author": "Marijn Haverbeke",
-        "category": "Tech",
-        "image_url": "https://i.ibb.co.com/BVBwhysq/IEVC-s-Vu4.png"
-    },
-    {
-        "id": 2,
-        "title": "The Silent Patient",
-        "author": "Alex Michaelides",
-        "category": "Story",
-        "image_url": "https://i.ibb.co.com/5g8xdBnv/6513040-80.webp"
-    },
-    {
-        "id": 3,
-        "title": "Brief Answers to the Big Questions",
-        "author": "Stephen Hawking",
-        "category": "Science",
-        "image_url": "https://i.ibb.co.com/0RVWHxGT/470.webp"
-    },
-    {
-        "id": 4,
-        "title": "Clean Code",
-        "author": "Robert C. Martin",
-        "category": "Tech",
-        "image_url": "https://i.ibb.co.com/5Xm6zJvL/37aaf821bfaf5e5fdd096a684b3a0bd9.png"
-    },
-    {
-        "id": 5,
-        "title": "The Alchemist",
-        "author": "Paulo Coelho",
-        "category": "Story",
-        "image_url": "https://i.ibb.co.com/YFXtB3BF/1587673469517.png"
-    },
-    {
-        "id": 6,
-        "title": "The Selfish Gene",
-        "author": "Richard Dawkins",
-        "category": "Science",
-        "image_url": "https://i.ibb.co.com/jj0Pqg6/9780198788607.webp"
-    },
-    {
-        "id": 7,
-        "title": "You Don't Know JS Yet",
-        "author": "Kyle Simpson",
-        "category": "Tech",
-        "image_url": "https://i.ibb.co.com/vvD6xC0X/25136217.jpg"
-    },
-    {
-        "id": 8,
-        "title": "Where the Crawdads Sing",
-        "author": "Delia Owens",
-        "category": "Story",
-        "image_url": "https://i.ibb.co.com/2sZz8n9v/where-the-crawdads-sing.jpg"
-    },
-    {
-        "id": 9,
-        "title": "Cosmos",
-        "author": "Carl Sagan",
-        "category": "Science",
-        "image_url": "https://i.ibb.co.com/pDX8PHG/1200x630wz.png"
-    },
-    {
-        "id": 10,
-        "title": "The Pragmatic Programmer",
-        "author": "Andrew Hunt & David Thomas",
-        "category": "Tech",
-        "image_url": "https://i.ibb.co.com/rRWpn2vk/61d5bdd5bd7b580020c11f3f.jpg"
-    },
-    {
-        "id": 11,
-        "title": "1984",
-        "author": "George Orwell",
-        "category": "Story",
-        "image_url": "https://i.ibb.co.com/4Rr2RpDP/s-l400.png"
-    },
-    {
-        "id": 12,
-        "title": "Sapiens: A Brief History of Humankind",
-        "author": "Yuval Noah Harari",
-        "category": "Science",
-        "image_url": "https://i.ibb.co.com/YFsVNBLb/sapiens.png"
-    }
-];
-
-
 const AllBooksPage = () => {
     const [searchQuery, setSearchQuery] = useState("");
     const [selectedCategory, setSelectedCategory] = useState("All");
@@ -154,9 +66,11 @@ const AllBooksPage = () => {
                             {filteredBooks.map(book => (
                                 <div key={book.id} className="bg-white rounded-md border border-gray-200 hover:shadow-lg transition-shadow">
                                     <div className="h-64 bg-gray-200">
-                                        <img
+                                        <Image
                                             src={book.image_url}
                                             alt={book.title}
+                                            height={256}
+                                            width={256}
                                             className="w-full h-full object-cover"
                                         />
                                     </div>

@@ -1,8 +1,18 @@
+'use client';
+import { signOut, useSession } from '@/lib/auth-client';
 import React from 'react';
 import Navlink from './Navlink';
 import Link from 'next/link';
 
 const Navbar = () => {
+
+    const { data, isPending } = useSession();
+
+    if (isPending) {
+        return <div>Loading...</div>
+    }
+
+    const user = data?.user;
 
     const menuItems = (
         <>
@@ -24,7 +34,9 @@ const Navbar = () => {
                         {menuItems}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl"> <span className='text-blue-500'>Books</span>Borrow</a>
+                <Link href="/">
+                    <li className="btn btn-ghost text-xl"> <span className='text-blue-500'>Books</span>Borrow</li>
+                </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -32,12 +44,12 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end items-center gap-2">
-                <Link href="/login">
-                    <li className="btn">Login</li>
-                </Link>
-                <Link href="/register">
-                    <li className="btn">Register</li>
-                </Link>
+                {user ? <> <p className='text-blue-500 font-bold'> <span className='text-gray-500'>Welcome,</span> {user.name}!</p>
+                    <button
+                        onClick={() => signOut()}
+                        className='btn btn-primary'
+                    >Log Out</button> </> :
+                    <Link href="/login" className='btn btn-ghost'>Login</Link>}
             </div>
         </div>
     );
