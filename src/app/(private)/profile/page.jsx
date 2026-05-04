@@ -36,7 +36,7 @@ const ProfilePage = () => {
                         <div className="absolute -bottom-12 left-1/2 -translate-x-1/2 md:left-12 md:translate-x-0">
                             <div className="relative group">
                                 <Image
-                                    src={user.image || 'https://i.ibb.co.com/678sPNTc/social-media-platforms-represented-as-a-colorful-cube-png.png'}
+                                    src={user.image}
                                     alt={user.name}
                                     width={128}
                                     height={128}
