@@ -20,7 +20,7 @@ const Banner = () => {
 
                     <div className="badge badge-primary badge-outline mb-6 flex gap-2 py-4 px-5">
                         <FiSearch />
-                        <span className='font-medium'>Your Digital Library</span>
+                        <span className='font-medium'>Your Digital Library Platform</span>
                     </div>
 
                     <h1 className="text-5xl md:text-6xl font-extrabold leading-tight tracking-tight text-base-content mb-6">
