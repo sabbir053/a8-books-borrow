@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+1. Project Name:
 
-## Getting Started
+    = A8 Books Borrow
 
-First, run the development server:
+2. Project Overview:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+    A8 Books Borrow is a modern online book borrowing platform that digitizes the traditional library system. Users can explore a collection of books, view details, and borrow books easily through a clean and user-friendly interface.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Purpose:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+    The main goal of this project is to:
+        1. Simplify the book borrowing process.
+        2. Provide a seamless digital library experience.
+        3. Practice full-stack development using modern technologies.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Live URL
 
-## Learn More
+    = https://a8-books-borrow.vercel.app/
 
-To learn more about Next.js, take a look at the following resources:
+5. Key Features:
+    1. Browse all available books
+    2. View detailed information about each book
+    3. Borrow books online
+    4. Authentication system (Email/Google login)
+    5. Fast and responsive UI
+    6. Deployed on cloud for global access
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+6. Technologies Used:
+    Frontend: Next.js, Hero ui, Tailwind CSS, DaisyUI, animate_css
+    Database: MongoDB
+    Authentication: Better_auth
+    Deployment: Vercel
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+7. NPM Packages Used:
+    next js, tailwindcss, daisyui, heroui, react_toastify, animate_css etc
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+8. Developed BY:
+Sabbir Hossain
