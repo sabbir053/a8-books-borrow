@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import React from 'react';
 import { FiBookOpen, FiSearch } from 'react-icons/fi';
+import 'animate.css';
+
 
 const Banner = () => {
     return (
@@ -30,7 +32,7 @@ const Banner = () => {
                     </p>
 
                     <Link href="/all-books" className="group">
-                        <button className="btn btn-primary btn-lg rounded-full px-10 flex items-center gap-3 group-hover:scale-105 transition-all duration-300">
+                        <button className="btn btn-primary btn-lg rounded-full px-10 animate__animated animate__bounce flex items-center gap-3 group-hover:scale-105 transition-all duration-300">
                             <FiBookOpen size={20} />
                             <span>Browse Now</span>
                         </button>

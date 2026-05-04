@@ -1,6 +1,7 @@
 import Banner from "@/components/home/Banner";
 import FeaturedBooks from "@/components/home/FeaturedBooks";
 import Marquee from "@/components/home/Marquee";
+import StatsSection from "@/components/home/StatsSection";
 import Testimonials from "@/components/home/Testimonials";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
         <Marquee />
         <FeaturedBooks />
         <Testimonials />
+        <StatsSection />
       </main>
     </div>
   );

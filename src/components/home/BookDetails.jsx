@@ -4,6 +4,8 @@ import { FiBook, FiLayers, FiUser } from 'react-icons/fi';
 import { toast } from 'react-toastify';
 import { useSession } from '@/lib/auth-client';
 import { useRouter } from 'next/navigation';
+import 'animate.css';
+
 
 const BookDetails = ({ book }) => {
     const { data, isPending } = useSession();
@@ -24,6 +26,12 @@ const BookDetails = ({ book }) => {
     if (!user) return null;
 
     const handleBorrow = () => {
+        if (!user) {
+            toast.error("Please login first!");
+            router.push("/login");
+            return;
+        }
+
         toast.success(`Book "${book.title}" borrowed successfully!`);
     };
 
@@ -35,7 +43,7 @@ const BookDetails = ({ book }) => {
                 </span>
                 <div className="flex items-center gap-2 text-success font-bold bg-success/10 px-4 py-1 rounded-full">
                     <FiLayers size={18} />
-                    <span>{book.available_quantity} Copies Available</span>
+                    <span>{book.available_quantity} copies left</span>
                 </div>
             </div>
 
@@ -59,7 +67,7 @@ const BookDetails = ({ book }) => {
 
             <button
                 onClick={handleBorrow}
-                className="btn btn-primary text-lg text-white rounded-xl"
+                className="btn btn-primary text-lg text-white rounded-xl animate__animated animate__bounce"
             >
                 Borrow This Book
             </button>
