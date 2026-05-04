@@ -27,7 +27,7 @@ const Testimonials = () => {
                         <div className="flex items-center gap-4">
                             <div className="avatar">
                                 <div className="w-12 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                                    <img src="https://i.pravatar.cc/150?u=1" alt="User" />
+                                    <img src="https://i.ibb.co.com/cKgyTF1F/sabbir-hosen-pp.jpg" alt="User" />
                                 </div>
                             </div>
                             <div>
@@ -50,7 +50,7 @@ const Testimonials = () => {
                         <div className="flex items-center gap-4">
                             <div className="avatar">
                                 <div className="w-12 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                                    <img src="https://i.pravatar.cc/150?u=2" alt="User" />
+                                    <img src="https://dslgroupbd.com/wp-content/uploads/2023/08/m-director.png" alt="User" />
                                 </div>
                             </div>
                             <div>
@@ -73,7 +73,7 @@ const Testimonials = () => {
                         <div className="flex items-center gap-4">
                             <div className="avatar">
                                 <div className="w-12 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                                    <img src="https://i.pravatar.cc/150?u=3" alt="User" />
+                                    <img src="https://observerbd.com/2025/10/15/ob_61.1760531859.jpg" alt="User" />
                                 </div>
                             </div>
                             <div>
