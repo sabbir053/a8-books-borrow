@@ -5,7 +5,7 @@ import React from 'react';
 
 
 const BookDetailsPage = async ({ params }) => {
-    const res = await fetch('http://localhost:3000/data.json', { cache: 'no-store' });
+    const res = await fetch('https://a8-book-borrow.vercel.app/data.json');
     const booksData = await res.json();
 
     const { id } = await params;

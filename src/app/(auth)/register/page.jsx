@@ -10,7 +10,7 @@ import { useState } from "react";
 
 const RegisterPage = () => {
     const router = useRouter();
-      const [isVisible, setIsVisible] = useState(false);
+    const [isVisible, setIsVisible] = useState(false);
 
 
     const onSubmit = async (e) => {
@@ -35,10 +35,10 @@ const RegisterPage = () => {
     };
 
     const handleGoogleLogin = async () => {
-        await authClient.signIn.social({
+        const data = await authClient.signIn.social({
             provider: "google",
-            callbackURL: "/"
         });
+        console.log('data:', data);
     };
 
     return (
@@ -97,18 +97,6 @@ const RegisterPage = () => {
                         <FieldError className="text-[10px] text-red-500" />
                     </TextField>
 
-                    {/* <TextField isRequired name="password" type="password" className="flex flex-col gap-1">
-                        <Label className="text-xs font-bold text-gray-600 ml-1">Password</Label>
-                        <Input 
-                            name="password" 
-                            type="password"
-                            placeholder="••••••••" 
-                            startContent={<FiLock className="text-blue-500 mr-1" />}
-                            className="bg-gray-50 border border-gray-200 rounded-xl px-4 py-2"
-                        />
-                        <Description className="text-[9px] text-gray-400 ml-1">Min 8 chars, 1 uppercase, 1 number</Description>
-                        <FieldError className="text-[10px] text-red-500" />
-                    </TextField> */}
                     <TextField className="w-full" name="password">
                         <Label>Password</Label>
 

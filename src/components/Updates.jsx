@@ -1,6 +1,5 @@
 'use client';
 import React from 'react';
-import Updates from "@/components/Updates";
 import { authClient } from "@/lib/auth-client";
 import { Button, FieldError, Form, Input, Label, TextField } from "@heroui/react";
 import { FiCheck, FiImage, FiUser } from "react-icons/fi";

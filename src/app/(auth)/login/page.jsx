@@ -44,7 +44,6 @@ const LoginPage = () => {
 
                 <Form className="flex flex-col gap-6" onSubmit={onSubmit}>
 
-                    {/* EMAIL */}
                     <TextField name="email" isRequired>
                         <Label>Email</Label>
                         <Input
@@ -55,7 +54,6 @@ const LoginPage = () => {
                         />
                     </TextField>
 
-                    {/* PASSWORD WITH TOGGLE (FIXED) */}
                     <TextField name="password" isRequired>
                         <Label>Password</Label>
 
@@ -84,7 +82,6 @@ const LoginPage = () => {
                         </InputGroup>
                     </TextField>
 
-                    {/* BUTTONS */}
                     <Button
                         type="submit"
                         className="w-full bg-blue-600 text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2"
