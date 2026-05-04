@@ -4,7 +4,7 @@ import React from 'react';
 import { FiBookOpen } from 'react-icons/fi';
 
 const FeaturedBooks = async() => {
-    const res = await fetch('https://a8-books-borrow-git-main-sabbir-devs-projects.vercel.app/data.json');
+    const res = await fetch('https://a8-books-borrow.vercel.app/data.json');
     const booksData = await res.json();
     return (
         <section className="py-10 container mx-auto">

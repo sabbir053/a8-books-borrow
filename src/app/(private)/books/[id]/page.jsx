@@ -5,7 +5,7 @@ import React from 'react';
 
 
 const BookDetailsPage = async ({ params }) => {
-    const res = await fetch('https://a8-books-borrow-git-main-sabbir-devs-projects.vercel.app/data.json');
+    const res = await fetch('https://a8-books-borrow.vercel.app/data.json');
     const booksData = await res.json();
 
     const { id } = await params;
